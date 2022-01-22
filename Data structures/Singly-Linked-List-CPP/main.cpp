@@ -1,6 +1,6 @@
 #include "header.h"
 
 int main() {
-    cout << "Hello, World!" << endl;
+    createList();
     return 0;
 }
