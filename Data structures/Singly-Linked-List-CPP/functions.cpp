@@ -93,3 +93,21 @@ void pushBack(Node* &first, int value) {
         first = current;
     }
 }
+
+void popBack(Node* &first) {
+    if (first == nullptr) return;
+    Node* current = first;
+    Node* previous = current;
+    int length = 0; //for 0st index
+    while (current -> pointerToNextElem) {
+        previous = current;
+        current = current->pointerToNextElem;
+        length++;
+    }
+    if (length > 1) {
+        delete current;
+        previous -> pointerToNextElem = nullptr;
+    } else {
+        first = nullptr;
+    }
+}
