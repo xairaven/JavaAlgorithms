@@ -52,6 +52,7 @@ int listLength(Node* first) {
     return length;
 }
 
+//print list
 void printList(Node* first) {
     if (first == nullptr) return;
     Node* current = first;
@@ -61,7 +62,8 @@ void printList(Node* first) {
     }
 }
 
-void printList(Node* first, int startIndex, int endIndex) { //inclusive startIndex, not including endIndex
+//print list starting with index startIndex and ending with index endIndex
+void printList(Node* first, int startIndex, int endIndex) {
     if (first == nullptr) return;
     Node* current = first;
     int counter = 0;
@@ -72,7 +74,8 @@ void printList(Node* first, int startIndex, int endIndex) { //inclusive startInd
     }
 }
 
-void pushBack(Node* first, int value) {
+//push element into back of the list
+void pushBack(Node* &first, int value) {
     Node* current = first;
     Node* previous = current;
     int length = 0; //for 0st index

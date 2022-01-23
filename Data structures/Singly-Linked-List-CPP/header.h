@@ -13,5 +13,5 @@ Node* createList();
 void deleteList(Node* first);
 void printList(Node* first);
 void printList(Node* first, int startIndex, int endIndex);
-void pushBack(Node* first, int value);
+void pushBack(Node* &first, int value);
 int listLength(Node* first);
