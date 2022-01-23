@@ -9,11 +9,12 @@ struct Node {
 };
 
 //prototypes
-Node* createList();
-int listLength(Node* first);
-void deleteList(Node* first);
-void insertElem(Node* &first, int index, int value);
-void printList(Node* first);
-void printList(Node* first, int startIndex, int endIndex);
-void pushBack(Node* &first, int value);
-void popBack(Node* &first);
+Node* createList ();
+int   listLength (Node* first);
+void  deleteList (Node* first);
+void  deleteElem (Node* &first, int index);
+void  insertElem (Node* &first, int index, int value);
+void  printList  (Node* first);
+void  printList  (Node* first, int startIndex, int endIndex);
+void  pushBack   (Node* &first, int value);
+void  popBack    (Node* &first);

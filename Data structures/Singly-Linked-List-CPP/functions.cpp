@@ -52,6 +52,31 @@ void deleteList(Node* first){
     }
 }
 
+//delete node on position of index
+void deleteElem(Node* &first, int index) {
+    int length = listLength(first);
+    if (index < 0 || index > length - 1 ) {
+        cout << "Error: bad index" << endl;
+        return;
+    }
+    if (index == 0) {
+        Node* temp = first -> pointerToNextElem;
+        delete first;
+        first = temp;
+        return;
+    } else {
+        Node* current = first;
+        for (int counter = 0; counter < index - 1; counter++) {
+            current = current -> pointerToNextElem;
+        }
+        Node* previous = current;
+        current = current -> pointerToNextElem;
+        previous -> pointerToNextElem = current -> pointerToNextElem;
+        delete current;
+        return;
+    }
+}
+
 //insert element on position of index
 void insertElem(Node* &first, int index, int value) {
     int length = listLength(first);
