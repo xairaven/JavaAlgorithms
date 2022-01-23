@@ -41,8 +41,8 @@ void deleteList(Node* first){
 }
 
 //getting length of the list
-int list_length(Node* first) {
-    if(first == nullptr) return 0;
+int listLength(Node* first) {
+    if (first == nullptr) return 0;
     int length = 1;
     Node* current = first;
     while(current -> pointerToNextElem != nullptr) {
@@ -50,4 +50,43 @@ int list_length(Node* first) {
         current = current -> pointerToNextElem;
     }
     return length;
+}
+
+void printList(Node* first) {
+    if (first == nullptr) return;
+    Node* current = first;
+    while (current) {
+        cout << current -> value << endl;
+        current = current -> pointerToNextElem;
+    }
+}
+
+void printList(Node* first, int startIndex, int endIndex) { //inclusive startIndex, not including endIndex
+    if (first == nullptr) return;
+    Node* current = first;
+    int counter = 0;
+    while (current) {
+        if (counter >= startIndex && counter < endIndex) cout << current -> value << endl;
+        current = current -> pointerToNextElem;
+        counter++;
+    }
+}
+
+void pushBack(Node* first, int value) {
+    Node* current = first;
+    Node* previous = current;
+    int length = 0; //for 0st index
+    while (current) {
+        previous = current;
+        current = current->pointerToNextElem;
+        length++;
+    }
+    current = new Node;
+    current -> value = value;
+    current -> pointerToNextElem = nullptr;
+    if (length != 0) {
+        previous -> pointerToNextElem = current;
+    } else {
+        first = current;
+    }
 }
