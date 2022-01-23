@@ -28,6 +28,18 @@ Node* createList() {
     return first;
 }
 
+//getting length of the list
+int listLength(Node* first) {
+    if (first == nullptr) return 0;
+    int length = 1;
+    Node* current = first;
+    while(current -> pointerToNextElem != nullptr) {
+        length++;
+        current = current -> pointerToNextElem;
+    }
+    return length;
+}
+
 //deleting list
 void deleteList(Node* first){
     if (first == nullptr) return; //empty list can not be cleared
@@ -40,16 +52,36 @@ void deleteList(Node* first){
     }
 }
 
-//getting length of the list
-int listLength(Node* first) {
-    if (first == nullptr) return 0;
-    int length = 1;
-    Node* current = first;
-    while(current -> pointerToNextElem != nullptr) {
-        length++;
-        current = current -> pointerToNextElem;
+//insert element on position of index
+void insertElem(Node* &first, int index, int value) {
+    int length = listLength(first);
+    if (index < 0 || index > length ) {
+        cout << "Error: bad index" << endl;
+        return;
     }
-    return length;
+    Node* newElem = new Node;
+    newElem -> value = value;
+    if (index == 0) {
+        newElem -> pointerToNextElem = first;
+        first = newElem;
+        return;
+    } else if (index == length) {
+        Node* current = first;
+        while (current -> pointerToNextElem) {
+            current = current -> pointerToNextElem;
+        }
+        current -> pointerToNextElem = newElem;
+        newElem -> pointerToNextElem = nullptr;
+        return;
+    } else {
+        Node* current = first;
+        for (int counter = 0; counter < index; counter++) {
+            current = current -> pointerToNextElem;
+        }
+        newElem -> pointerToNextElem = current -> pointerToNextElem;
+        current -> pointerToNextElem = newElem;
+        return;
+    }
 }
 
 //print list
@@ -94,6 +126,7 @@ void pushBack(Node* &first, int value) {
     }
 }
 
+//delete last element of the list
 void popBack(Node* &first) {
     if (first == nullptr) return;
     Node* current = first;
