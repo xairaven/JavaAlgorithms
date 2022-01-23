@@ -2,8 +2,7 @@
 
 int main() {
     Node* list = createList();
-    cout << "Length of the list: " << listLength(list) << endl;
-    printList(list);
+    //check README.md
     deleteList(list);
     return 0;
 }

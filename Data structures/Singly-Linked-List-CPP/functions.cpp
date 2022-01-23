@@ -28,6 +28,29 @@ Node* createList() {
     return first;
 }
 
+//copying list
+Node* copyList(Node* first) {
+    if (first == nullptr) return nullptr;
+    Node* current = first;
+
+    Node* copy = new Node;
+    copy -> value = current -> value;
+    copy -> pointerToNextElem = nullptr;
+    Node* copyCurrent = copy;
+
+    current = current -> pointerToNextElem;
+    while (current) {
+        copyCurrent -> pointerToNextElem = new Node;
+        copyCurrent = copyCurrent -> pointerToNextElem;
+
+        copyCurrent -> value = current -> value;
+        copyCurrent -> pointerToNextElem = nullptr;
+
+        current = current -> pointerToNextElem;
+    }
+    return copy;
+}
+
 //getting length of the list
 int listLength(Node* first) {
     if (first == nullptr) return 0;
@@ -167,5 +190,28 @@ void popBack(Node* &first) {
         previous -> pointerToNextElem = nullptr;
     } else {
         first = nullptr;
+    }
+}
+
+//bubble-sorting list
+void sortList (Node* first) {
+    Node* previous = first;
+    Node* current = previous -> pointerToNextElem;
+    bool sorted = false;
+    int temp;
+    while (!sorted) {
+        previous = first;
+        current = previous -> pointerToNextElem;
+        sorted = true;
+        while (current) {
+            if (previous -> value > current -> value) {
+                temp = current -> value;
+                current -> value = previous -> value;
+                previous -> value = temp;
+                sorted = false;
+            }
+            previous = previous -> pointerToNextElem;
+            current = current -> pointerToNextElem;
+        }
     }
 }
