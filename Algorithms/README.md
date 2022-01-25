@@ -6,7 +6,7 @@ Algorithms implemented by me.<br><br>
 ### [Math](https://github.com/xairaven/Algorithms-Data-Structures/tree/main/Algorithms/Math)
 - <a>Work in progress</a>
 ### [Search](https://github.com/xairaven/Algorithms-Data-Structures/tree/main/Algorithms/Search)
-- <a href = "https://github.com/xairaven/Algorithms-Data-Structures/tree/main/Algorithms/Search/Binary-Search-Java">Binary search | Java</a>
+- <a href = "https://github.com/xairaven/Algorithms-Data-Structures/tree/main/Algorithms/Search/Binary-Search-Java">Binary search</a> | Java
 ### [Sorting](https://github.com/xairaven/Algorithms-Data-Structures/tree/main/Algorithms/Sorting)
 - <a>Work in progress</a>
 
