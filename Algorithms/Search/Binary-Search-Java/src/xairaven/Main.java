@@ -4,7 +4,7 @@ import edu.princeton.cs.introcs.In;
 public class Main {
     public static void main(String[] args) {
         int key = 688426; //random number from largeWSorted.txt
-        In in = new In("../resources/largeWSorted.txt");
+        In in = new In("../../resources/txt_files/largeWSorted.txt");
         int[] array = in.readAllInts();
         int index = binarySearch(key, array, 0, array.length - 1);
         System.out.printf("Index of number %d is %d", key, index);
