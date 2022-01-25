@@ -17,3 +17,9 @@ Algorithms implemented by me.<br><br>
 ### Step 2 (Run/Debug Configurations):
 - Edit configurations -> Set your module and settings like this:<br><br>
 <img src = "resources/step2.png"></img>
+
+## Resources
+- I used library "stdlib.jar", licensed by GNU (GPL) v.3.<br>
+- Authors: *Robert Sedgwick* and *Kevin Wayne*<br>
+- Link: http://introcs.cs.princeton.edu/java/stdlib/stdlib-package.jar
+- An archive that contains data files (largeW and e.t.c.) can be found at: http://algs4.cs.princeton.edu/code/algs4-data.zip
