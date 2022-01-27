@@ -4,5 +4,7 @@ public class Main {
         DecimalToBinary.main(52);
         MultiplicationAndExp.main(11, 3); //multiplication and exponentiation without such operations
         Fibonacci.main(2);
+        MatrixTest.main();
+        Euclid.main(105, 24);
     }
 }
