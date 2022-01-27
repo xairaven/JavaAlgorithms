@@ -7,6 +7,6 @@ public class DecimalToBinary {
             s = (n % 2) + s;
         }
         System.out.println(s);
-        System.out.print("\n\n");
+        System.out.print("\n");
     }
 }
