@@ -1,4 +1,3 @@
-import java.util.Iterator;
 /**
  * Test client for stack
  * Alex Kovalyov, 03.02.2022
