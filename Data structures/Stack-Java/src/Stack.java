@@ -20,6 +20,18 @@ public class Stack<Item> implements Iterable<Item> {
         return size;
     }
 
+    public Stack<Item> copy() {
+        Stack<Item> temp = new Stack<>();
+        Stack<Item> copy = new Stack<>();
+        for (Item it : this) {
+            temp.push(it);
+        }
+        for (Item it : temp) {
+            copy.push(it);
+        }
+        return copy;
+    }
+
     public void push(Item item) {
         if (item == null) {
             throw new IllegalArgumentException("Item can't be null");
