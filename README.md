@@ -7,6 +7,7 @@ In this repo you'll see some algorithms and data structures implemented by me.<b
 ## Data Structures
 - <a href="https://github.com/xairaven/Algorithms-Data-Structures/tree/main/Data%20structures/Queue-Java">Queue</a> | Java
 - <a href="https://github.com/xairaven/Algorithms-Data-Structures/tree/main/Data%20structures/Stack-Java">Stack</a> | Java
+- <a href="https://github.com/xairaven/Algorithms-Data-Structures/tree/main/Data%20structures/Union-Find/src/UnionFind">Union Find</a> | Java
 - <a href="https://github.com/xairaven/Algorithms-Data-Structures/tree/main/Data%20structures/Singly-Linked-List-CPP">Singly linked list (without OOP)</a> | C++
 # How to start?
 ## Installing
