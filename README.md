@@ -5,6 +5,7 @@ In this repo you'll see some algorithms and data structures implemented by me.<b
 - <a href="https://github.com/xairaven/Algorithms-Data-Structures/tree/main/Algorithms/Search/Binary-Search-Java">Binary search</a> | Java
 - <a href="https://github.com/xairaven/Algorithms-Data-Structures/tree/main/Algorithms/Math/Math-Tricks">Math tricks</a> | Java
 ## Data Structures
+- <a href="https://github.com/xairaven/Algorithms-Data-Structures/tree/main/Data%20structures/Deque-Java">Deque</a> | Java
 - <a href="https://github.com/xairaven/Algorithms-Data-Structures/tree/main/Data%20structures/Queue-Java">Queue</a> | Java
 - <a href="https://github.com/xairaven/Algorithms-Data-Structures/tree/main/Data%20structures/Stack-Java">Stack</a> | Java
 - <a href="https://github.com/xairaven/Algorithms-Data-Structures/tree/main/Data%20structures/Union-Find/src/UnionFind">Union Find</a> | Java
