@@ -4,11 +4,14 @@ Algorithms implemented by me.<br><br>
 
 ## Table of contents
 ### [Math](https://github.com/xairaven/Algorithms-Data-Structures/tree/main/Algorithms/Math)
-- <a>Work in progress</a>
+- <a href="https://github.com/xairaven/Algorithms-Data-Structures/tree/main/Algorithms/Math/Math-Tricks">Math tricks</a> | Java
 ### [Search](https://github.com/xairaven/Algorithms-Data-Structures/tree/main/Algorithms/Search)
 - <a href = "https://github.com/xairaven/Algorithms-Data-Structures/tree/main/Algorithms/Search/Binary-Search-Java">Binary search</a> | Java
 ### [Sorting](https://github.com/xairaven/Algorithms-Data-Structures/tree/main/Algorithms/Sorting)
-- <a>Work in progress</a>
+- <a href = "https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Algorithms/Sorting/src/BubbleSort.java">Bubble sort</a> | Java
+- <a href = "https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Algorithms/Sorting/src/SelectionSort.java">Selection sort</a> | Java
+- <a href = "https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Algorithms/Sorting/src/InsertionSort.java">Insertion sort</a> | Java
+- <a href = "https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Algorithms/Sorting/src/ShellSort.java">Shell sort</a> | Java
 
 ## How to compile project? (IntelliJ Idea)
 ### Step 1 (Adding module):
