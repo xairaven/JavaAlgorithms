@@ -9,9 +9,12 @@ Algorithms implemented by me.<br><br>
 - <a href = "https://github.com/xairaven/Algorithms-Data-Structures/tree/main/Algorithms/Search/Binary-Search-Java">Binary search</a> | Java
 ### [Sorting](https://github.com/xairaven/Algorithms-Data-Structures/tree/main/Algorithms/Sorting)
 - <a href = "https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Algorithms/Sorting/src/BubbleSort.java">Bubble sort</a> | Java
+- <a href = "https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Algorithms/Sorting/src/CocktailShakerSort.java">Cocktail Shaker sort</a> | Java
 - <a href = "https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Algorithms/Sorting/src/SelectionSort.java">Selection sort</a> | Java
 - <a href = "https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Algorithms/Sorting/src/InsertionSort.java">Insertion sort</a> | Java
 - <a href = "https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Algorithms/Sorting/src/ShellSort.java">Shell sort</a> | Java
+- <a href = "https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Algorithms/Sorting/src/MergeSort.java">Merge sort</a> | Java
+- <a href = "https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Algorithms/Sorting/src/Quicksort.java">Quicksort</a> | Java
 
 ## How to compile project? (IntelliJ Idea)
 ### Step 1 (Adding module):
