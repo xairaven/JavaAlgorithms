@@ -13,68 +13,54 @@ public class Main {
         String resFolder = "Algorithms/Sorting/result/";
         Integer[] arr = readAllInts(rawFile);
 
-        System.out.println("Menu\n 1. Bubble\n 2. Selection\n 3. Insertion \n 4. Shell");
+        System.out.println("Menu:");
+        System.out.println(" 1. Bubble");
+        System.out.println(" 2. Selection");
+        System.out.println(" 3. Insertion");
+        System.out.println(" 4. Shell");
+        System.out.println(" 5. Mergesort");
+        System.out.println(" 6. CocktailShakerSort");
+        System.out.println(" 7. Quicksort");
         In in = new In();
         int choice = in.readInt();
         long start, time;
+        String sort;
         switch (choice) {
-            case 1 -> {
-                description("Bubble");
-
-                Integer[] bubbleArr = copy(arr);
-
-                start = System.currentTimeMillis();
-                BubbleSort.sort(bubbleArr);
-                time = System.currentTimeMillis() - start;
-
-                System.out.println("Execution time: " + time + "ms. ");
-                writeTime(resFolder + "AllTests.txt", "Bubble: " + time + " ms.");
-
-                writeArr(resFolder + "bubble.txt", bubbleArr);
-            }
-            case 2 -> {
-                description("Selection");
-
-                Integer[] selectionArr = copy(arr);
-
-                start = System.currentTimeMillis();
-                SelectionSort.sort(selectionArr);
-                time = System.currentTimeMillis() - start;
-
-                System.out.println("Execution time: " + time + "ms. ");
-                writeTime(resFolder + "AllTests.txt", "Selection: " + time + " ms.");
-
-                writeArr(resFolder + "selection.txt", selectionArr);
-            }
-            case 3 -> {
-                description("Insertion");
-
-                Integer[] insertionArr = copy(arr);
-
-                start = System.currentTimeMillis();
-                SelectionSort.sort(insertionArr);
-                time = System.currentTimeMillis() - start;
-
-                System.out.println("Execution time: " + time + "ms. ");
-                writeTime(resFolder + "AllTests.txt", "Insertion: " + time + " ms.");
-
-                writeArr(resFolder + "insertion.txt", insertionArr);
-            }
-            case 4 -> {
-                description("Shell");
-
-                Integer[] shellArr = copy(arr);
-
-                start = System.currentTimeMillis();
-                SelectionSort.sort(shellArr);
-                time = System.currentTimeMillis() - start;
-
-                System.out.println("Execution time: " + time + "ms. ");
-                writeTime(resFolder + "AllTests.txt", "Shell: " + time + " ms.");
-
-                writeArr(resFolder + "shell.txt", shellArr);
+            case 1 -> sort = "Bubble";
+            case 2 -> sort = "Selection";
+            case 3 -> sort = "Insertion";
+            case 4 -> sort = "Shell";
+            case 5 -> sort = "Mergesort";
+            case 6 -> sort = "CocktailShakerSort";
+            case 7 -> sort = "Quicksort";
+            default -> {
+                System.out.println("Wrong choice.");
+                return;
             }
         }
+
+        description(sort);
+        Integer[] copyArr = copy(arr);
+        start = System.currentTimeMillis();
+        switch (choice) {
+            case 1 -> BubbleSort.sort(copyArr);
+            case 2 -> SelectionSort.sort(copyArr);
+            case 3 -> InsertionSort.sort(copyArr);
+            case 4 -> ShellSort.sort(copyArr);
+            case 5 -> MergeSort.sort(copyArr);
+            case 6 -> CocktailShakerSort.sort(copyArr);
+            case 7 -> Quicksort.sort(copyArr);
+            default -> {
+                System.out.println("Wrong choice.");
+                return;
+            }
+        }
+        time = System.currentTimeMillis() - start;
+
+        System.out.println("Execution time: " + time + "ms. ");
+        writeTime(resFolder + "AllTests.txt", sort + ": " + time + " ms.");
+
+        writeArr(resFolder + sort.toLowerCase() + ".txt", copyArr);
     }
 
     private static void show(Comparable[] a) {
@@ -115,7 +101,7 @@ public class Main {
     private static void description(String sort) {
         System.out.println("-- " + sort + " sort --");
         System.out.println("Input: Algorithms/resources/txt_files/32Kints.txt");
-        System.out.println("Output: Algorithms/Sorting/result/insertion.txt");
+        System.out.println("Output: Algorithms/Sorting/result/" + sort.toLowerCase() + ".txt");
     }
 
     private static Integer[] copy(Integer[] arr) {

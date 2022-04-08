@@ -1,11 +1,29 @@
-Bubble: 11488 ms.
+32K Ints:
+
 Bubble: 11091 ms.
+Bubble: 11419 ms.
+Bubble: 11248 ms.
 
-Selection: 1504 ms.
-Selection: 1773 ms.
+CocktailShakerSort: 5030 ms.
+CocktailShakerSort: 5436 ms.
+CocktailShakerSort: 5358 ms.
 
-Insertion: 1574 ms.
-Insertion: 1925 ms.
+Insertion: 3108 ms.
+Insertion: 3140 ms.
+Insertion: 3061 ms.
 
-Shell: 1531 ms.
-Shell: 1500 ms.
+Selection: 1593 ms.
+Selection: 1531 ms.
+Selection: 1499 ms.
+
+Shell: 62 ms.
+Shell: 47 ms.
+Shell: 31 ms.
+
+Mergesort: 32 ms.
+Mergesort: 47 ms.
+Mergesort: 31 ms.
+
+Quicksort: 32 ms.
+Quicksort: 31 ms.
+Quicksort: 31 ms.

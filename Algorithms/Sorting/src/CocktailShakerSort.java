@@ -1,15 +1,26 @@
 @SuppressWarnings("unchecked")
-public class BubbleSort {
+public class CocktailShakerSort {
     public static void sort(Comparable[] arr) {
-        boolean sorted = false;
-        while (!sorted) {
-            sorted = true;
-            for (int i = 0; i < arr.length - 1; i++) {
+        int lo = 0;
+        int hi = arr.length - 1;
+        int swapLo, swapHi;
+        while (lo < hi) {
+            swapHi = 0;
+            for (int i = lo; i < hi; i++) {
                 if (less(arr[i + 1], arr[i])) {
-                    exch(arr, i, i + 1);
-                    sorted = false;
+                    exch(arr, i, i+1);
+                    swapHi = i;
                 }
             }
+            hi = swapHi;
+            swapLo = arr.length - 1;
+            for (int j = hi; j > lo; j--) {
+                if (less(arr[j], arr[j-1])) {
+                    exch(arr, j-1, j);
+                    swapLo = j;
+                }
+            }
+            lo = swapLo;
         }
     }
 
