@@ -1,5 +1,5 @@
 package xairaven;
-import edu.princeton.cs.introcs.In;
+import edu.princeton.cs.algs4.In;
 
 public class Main {
     public static void main(String[] args) {
