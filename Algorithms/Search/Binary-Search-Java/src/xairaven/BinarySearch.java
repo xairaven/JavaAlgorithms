@@ -1,15 +1,12 @@
 package xairaven;
 import edu.princeton.cs.algs4.In;
 
+/**
+ * Implementation of Binary search algorithm
+ * @author Alex "xairaven" Kovalyov
+ * 25.01.2022
+ */
 public class Main {
-    public static void main(String[] args) {
-        int key = 688426; //random number from largeWSorted.txt
-        In in = new In("../../resources/txt_files/largeWSorted.txt");
-        int[] array = in.readAllInts();
-        int index = binarySearch(key, array, 0, array.length - 1);
-        System.out.printf("Index of number %d is %d", key, index);
-    }
-
     public static int binarySearch(int key, int[] arr, int lo, int hi) {
         if (arr == null) throw new IllegalArgumentException();
         if (lo <= hi) {
@@ -20,5 +17,14 @@ public class Main {
         } else {
             return -1;
         }
+    }
+
+    // Testing
+    public static void main(String[] args) {
+        int key = 688426; //random number from largeWSorted.txt
+        In in = new In("../../resources/txt_files/largeWSorted.txt");
+        int[] array = in.readAllInts();
+        int index = binarySearch(key, array, 0, array.length - 1);
+        System.out.printf("Index of number %d is %d", key, index);
     }
 }
