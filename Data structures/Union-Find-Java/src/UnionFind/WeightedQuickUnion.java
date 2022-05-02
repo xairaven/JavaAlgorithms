@@ -1,5 +1,10 @@
 package UnionFind;
 
+/**
+ * Implementation of Weighted Quick Union<br>
+ * Date: 19.02.2022
+ * @author Alex "xairaven" Kovalyov
+ */
 public class WeightedQuickUnion {
     private int[] id;
     private int[] sz;

@@ -1,5 +1,10 @@
 package UnionFind;
 
+/**
+ * Implementation of Union Find<br>
+ * Date: 19.02.2022
+ * @author Alex "xairaven" Kovalyov
+ */
 public class UnionFind {
     private int[] id;
     private int count;

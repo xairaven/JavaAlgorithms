@@ -1,7 +1,9 @@
 import java.util.Iterator;
+
 /**
- * Implementation of stack
- * Alex Kovalyov, 03.02.2022
+ * Implementation of stack<br>
+ * Date: 03.02.2022
+ * @author Alex "xairaven" Kovalyov
  */
 public class Stack<Item> implements Iterable<Item> {
     private Node first;

@@ -1,6 +1,11 @@
 package com.structures;
-import edu.princeton.cs.algs4.Queue;
+import edu.princeton.cs.algs4.Queue; // ANY QUEUE WITH ITERATOR
 
+/**
+ * Implementation of Sequential Search ST<br>
+ * Date: 10.04.2022
+ * @author Alex "xairaven" Kovalyov
+ */
 public class SequentialSearchST<Key, Value> {
     private int n;
     private Node first;

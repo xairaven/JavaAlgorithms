@@ -2,9 +2,9 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 /**
- * Deque class
- * @author xairaven
- * @param <Item>
+ * Implementation of deque <br>
+ * Date: 18.02.2022
+ * @author Alex "xairaven" Kovalyov
  */
 public class Deque<Item> implements Iterable<Item> {
     private Node<Item> first;   // first element

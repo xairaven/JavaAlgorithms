@@ -2,11 +2,11 @@ package xairaven;
 import edu.princeton.cs.algs4.In;
 
 /**
- * Implementation of Binary search algorithm
+ * Implementation of Binary search algorithm<br>
+ * Date: 25.01.2022
  * @author Alex "xairaven" Kovalyov
- * 25.01.2022
  */
-public class Main {
+public class BinarySearch {
     public static int binarySearch(int key, int[] arr, int lo, int hi) {
         if (arr == null) throw new IllegalArgumentException();
         if (lo <= hi) {

@@ -1,7 +1,10 @@
 import java.util.Iterator;
+import java.util.NoSuchElementException;
+
 /**
- * Implementation of queue
- * Alex Kovalyov, 03.02.2022
+ * Implementation of queue<br>
+ * Date: 03.02.2022
+ * @author Alex "xairaven" Kovalyov
  */
 public class Queue<Item> implements Iterable<Item> {
     private Node first;
@@ -9,8 +12,8 @@ public class Queue<Item> implements Iterable<Item> {
     private int size;
 
     private class Node {
-        Item item;
-        Node next;
+        private Item item;
+        private Node next;
     }
 
     public boolean isEmpty() {
@@ -22,48 +25,48 @@ public class Queue<Item> implements Iterable<Item> {
     }
 
     public void enqueue(Item item) {
-        if (item == null) {
-            throw new IllegalArgumentException("Item can't be null");
-        }
+        if (item == null) throw new IllegalArgumentException("item can't be null");
         Node oldLast = last;
         last = new Node();
         last.item = item;
         last.next = null;
-        if (isEmpty()) {
-            first = last;
-        } else {
-            oldLast.next = last;
-        }
+        if (isEmpty()) first = last;
+        else oldLast.next = last;
         size++;
     }
 
     public Item dequeue() {
-        if (isEmpty()) {
-            throw new RuntimeException("Queue underflow");
-        }
+        if (isEmpty()) throw new NoSuchElementException("queue underflow");
         Item item = first.item;
         first = first.next;
         size--;
-        if (isEmpty()) {
-            last = null;
-        }
+        if (isEmpty()) last = null;
         return item;
     }
 
     public Item peek() {
-        if (isEmpty()) {
-            throw new RuntimeException("Queue underflow");
-        }
+        if (isEmpty()) throw new NoSuchElementException("Queue underflow");
         return first.item;
+    }
+
+    public String toString() {
+        StringBuilder s = new StringBuilder();
+        for (Item item : this)
+            s.append(item + " ");
+        return s.toString();
     }
 
     @Override
     public Iterator<Item> iterator() {
-        return new QueueIterator();
+        return new QueueIterator(first);
     }
 
     private class QueueIterator implements Iterator<Item> {
-        private Node current = first;
+        private Node current;
+
+        public QueueIterator(Node first) {
+            current = first;
+        }
 
         @Override
         public boolean hasNext() {

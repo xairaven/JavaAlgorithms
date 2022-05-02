@@ -1,5 +1,10 @@
 package UnionFind;
 
+/**
+ * Implementation of Quick Union<br>
+ * Date: 19.02.2022
+ * @author Alex "xairaven" Kovalyov
+ */
 public class QuickUnion {
     private int[] id;
     private int count;
