@@ -42,6 +42,7 @@ public class BinarySearchTree<Key extends Comparable<Key>, Value> {
     }
 
     public Value get(Key key) {
+        if (key == null) throw new NullPointerException("argument to get() is null");
         return get(root, key);
     }
 
