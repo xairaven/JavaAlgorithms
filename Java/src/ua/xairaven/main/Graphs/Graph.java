@@ -46,4 +46,9 @@ public class Graph {
         adjacency[w].add(v);
         E++;
     }
+
+    public Iterable<Integer> adj(int v) {
+        if (v < 0 || v >= V) throw new IndexOutOfBoundsException("vertex " + v + " is not between 0 and " + (V-1));
+        return adjacency[v];
+    }
 }
