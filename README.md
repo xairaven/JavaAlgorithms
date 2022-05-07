@@ -18,9 +18,8 @@ In this repo you'll see some algorithms and data structures implemented by me.<b
 - [Quicksort](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/Sorting/Quicksort.java) | Java
 
 ## Data Structures
-### Bags:
-- [Bag](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/DataStructures/Bags/Bag.java) | Java
 ### Lists:
+- [Bag](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/DataStructures/Bags/Bag.java) | Java
 - [Deque](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/DataStructures/Queues/Deque.java) | Java
 - [Queue](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/DataStructures/Queues/Queue.java) | Java
 - [Stack](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/DataStructures/Stacks/Stack.java) | Java
