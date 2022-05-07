@@ -3,9 +3,8 @@ Data structures implemented by me.<br><br>
 ![](https://img.shields.io/badge/Code-Java-informational?style=flat-square&logo=Java&logoColor=white&color=5194f0)
 
 ## Table of contents
-### Bags:
-- [Bag](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/DataStructures/Bags/Bag.java) | Java
 ### Lists:
+- [Bag](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/DataStructures/Bags/Bag.java) | Java
 - [Deque](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/DataStructures/Queues/Deque.java) | Java
 - [Queue](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/DataStructures/Queues/Queue.java) | Java
 - [Stack](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/DataStructures/Stacks/Stack.java) | Java
