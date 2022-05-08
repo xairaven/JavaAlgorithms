@@ -46,8 +46,27 @@ public class Graph {
         E++;
     }
 
+    public int degree(int v) {
+        if (v < 0 || v >= V) throw new IndexOutOfBoundsException("vertex " + v + " is not between 0 and " + (V-1));
+        return adjacency[v].size();
+    }
+
     public Iterable<Integer> adjacency(int v) {
         if (v < 0 || v >= V) throw new IndexOutOfBoundsException("vertex " + v + " is not between 0 and " + (V-1));
         return adjacency[v];
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder s = new StringBuilder();
+        s.append(V + " vertices, " + E + " edges " + "\n");
+        for (int v = 0; v < V; v++) {
+            s.append(v + ": ");
+            for (int w : adjacency[v]) {
+                s.append(w + " ");
+            }
+            s.append("\n");
+        }
+        return s.toString();
     }
 }

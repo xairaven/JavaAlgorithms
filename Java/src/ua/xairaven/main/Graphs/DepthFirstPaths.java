@@ -60,7 +60,6 @@ public class DepthFirstPaths {
             } else {
                 System.out.printf("%d to %d:  not connected\n", s, v);
             }
-
         }
     }
 }
