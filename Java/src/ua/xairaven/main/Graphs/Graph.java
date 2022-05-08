@@ -1,5 +1,4 @@
 package ua.xairaven.main.Graphs;
-
 import edu.princeton.cs.algs4.In;
 import ua.xairaven.main.DataStructures.Bags.Bag;
 
@@ -47,7 +46,7 @@ public class Graph {
         E++;
     }
 
-    public Iterable<Integer> adj(int v) {
+    public Iterable<Integer> adjacency(int v) {
         if (v < 0 || v >= V) throw new IndexOutOfBoundsException("vertex " + v + " is not between 0 and " + (V-1));
         return adjacency[v];
     }
