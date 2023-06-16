@@ -1,58 +1,55 @@
-# Algorithms & Data Structures
-In this repo you'll see some algorithms and data structures implemented by me.<br><br>
-![](https://img.shields.io/badge/Code-Java-informational?style=flat-square&logo=Java&logoColor=white&color=5194f0) ![](https://img.shields.io/badge/Code-C++-informational?style=flat-square&logo=Cplusplus&logoColor=white&color=5194f0) <br>
+# Algorithms & Data Structures | Java
+In this repo you'll see some algorithms and data structures implemented by me on Java.<br><br>
+
+[![Java](https://img.shields.io/badge/Java-E87000?style=for-the-badge&logo=coffeescript&logoColor=white)](#)
+
 ## Algorithms
 ### Search
-- [Binary search](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/Search/BinarySearch.java) | Java
+- [Binary search](./src/ua/xairaven/main/Search/BinarySearch.java) | Java
 ### Math
-- [Math tricks](https://github.com/xairaven/Algorithms-Data-Structures/tree/main/Java/src/ua/xairaven/main/Maths) | Java
+- [Math tricks](./src/ua/xairaven/main/Maths/) | Java
 ### Graphs
-- [Graph](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/Graphs/Graph.java) | Java
+- [Graph](./src/ua/xairaven/main/Graphs/) | Java
 ### Sorting
-- [Bubble sort](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/Sorting/BubbleSort.java) | Java
-- [Cocktail Shaker sort](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/Sorting/CocktailShakerSort.java) | Java
-- [Selection sort](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/Sorting/SelectionSort.java) | Java
-- [Insertion sort](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/Sorting/InsertionSort.java) | Java
-- [Shell sort](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/Sorting/ShellSort.java) | Java
-- [Merge sort](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/Sorting/MergeSort.java) | Java
-- [Quicksort](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/Sorting/Quicksort.java) | Java
+- [Bubble sort](./src/ua/xairaven/main/Sorting/BubbleSort.java) | Java
+- [Cocktail Shaker sort](./src/ua/xairaven/main/Sorting/CocktailShakerSort.java) | Java
+- [Selection sort](./src/ua/xairaven/main/Sorting/SelectionSort.java) | Java
+- [Insertion sort](./src/ua/xairaven/main/Sorting/SelectionSort.java) | Java
+- [Shell sort](./src/ua/xairaven/main/Sorting/ShellSort.java) | Java
+- [Merge sort](./src/ua/xairaven/main/Sorting/MergeSort.java) | Java
+- [Quicksort](./src/ua/xairaven/main/Sorting/Quicksort.java) | Java
 
 ## Data Structures
 ### Lists:
-- [Bag](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/DataStructures/Bags/Bag.java) | Java
-- [Deque](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/DataStructures/Queues/Deque.java) | Java
-- [Queue](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/DataStructures/Queues/Queue.java) | Java
-- [Stack](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/DataStructures/Stacks/Stack.java) | Java
-- [Singly linked list (without OOP)](https://github.com/xairaven/Algorithms-Data-Structures/tree/main/CPP/Singly-Linked-List-CPP) | C++
+- [Bag](./src/ua/xairaven/main/DataStructures/Bags/Bag.java) | Java
+- [Deque](./src/ua/xairaven/main/DataStructures/Queues/Deque.java) | Java
+- [Queue](./src/ua/xairaven/main/DataStructures/Queues/Queue.java) | Java
+- [Stack](./src/ua/xairaven/main/DataStructures/Stacks/Stack.java) | Java
 ### Symbol Tables (Trees, Hash-maps, e.t.c):
-- [BST (Binary Search Tree)](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/DataStructures/SymbolTables/BST.java) | Java
-- [Binary Search Array ST](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/DataStructures/SymbolTables/BinarySearchST.java) | Java
-- [Red-Black BST](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/DataStructures/SymbolTables/RedBlackBST.java) | Java
-- [Sequential Search ST](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/DataStructures/SymbolTables/SequentialSearchST.java) | Java
+- [BST (Binary Search Tree)](./src/ua/xairaven/main/DataStructures/SymbolTables/BinarySearchST.java) | Java
+- [Binary Search Array ST](./src/ua/xairaven/main/DataStructures/SymbolTables/BST.java) | Java
+- [Red-Black BST](./src/ua/xairaven/main/DataStructures/SymbolTables/RedBlackBST.java) | Java
+- [Sequential Search ST](./src/ua/xairaven/main/DataStructures/SymbolTables/SequentialSearchST.java) | Java
 ### Union Find:
-- [Quick Union](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/DataStructures/UnionFind/QuickUnion.java) | Java
-- [Union Find](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/DataStructures/UnionFind/UnionFind.java) | Java
-- [Weighted Quick Union](https://github.com/xairaven/Algorithms-Data-Structures/blob/main/Java/src/ua/xairaven/main/DataStructures/UnionFind/WeightedQuickUnion.java) | Java
+- [Quick Union](./src/ua/xairaven/main/DataStructures/UnionFind/QuickUnion.java) | Java
+- [Union Find](./src/ua/xairaven/main/DataStructures/UnionFind/UnionFind.java) | Java
+- [Weighted Quick Union](./src/ua/xairaven/main/DataStructures/UnionFind/WeightedQuickUnion.java) | Java
 
 # How to start?
 ## Installing
 - Clone repository
 ```
-git clone github.com/xairaven/Algorithms-Data-Structures
+git clone github.com/xairaven/JavaAlgorithms
 ```
 ### Environment
-- C++ :
-  - Install C++ IDE (CLion preferably) and CMake
-  - Add CMake list of structure to configurations
-- Java :
   - Install Java IDE (IntelliJ Idea preferably) and JDK 17.0
 ## How to compile project? (IntelliJ Idea)
 ### Step 1 (Adding module):
 - File -> Project Structure -> Modules -> Import module -> *Select your module*<br><br>
-  <img src = "Java/res/step1.png"></img>
+  <img src = "res/step1.png"></img>
 ### Step 2 (Run/Debug Configurations):
 - Edit configurations -> Set your module and settings like this:<br><br>
-  <img src = "Java/res/step2.png"></img>
+  <img src = "res/step2.png"></img>
 
 ## Resources
 - I used library "algs4.jar", licensed by GNU (GPL) v.3.<br>
