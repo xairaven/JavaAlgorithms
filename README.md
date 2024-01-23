@@ -1,7 +1,13 @@
 # Algorithms & Data Structures | Java
-In this repo you'll see some algorithms and data structures implemented by me on Java.<br><br>
+In this repo you'll see some algorithms and data structures implemented by me on Java.
 
-[![Java](https://img.shields.io/badge/Java-E87000?style=for-the-badge&logo=coffeescript&logoColor=white)](#)
+---
+
+**THIS REPOSITORY IS NO LONGER MAINTAINED.**
+
+**No updates will be provided as I've moved away from Java Development.**
+
+---
 
 ## Algorithms
 ### Search
